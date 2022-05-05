@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+/* form {border: 3px solid #f1f1f1;} */
+input[type=text], input[type=password] { 
+  /* width: 100%; */ 
+  padding: 12px 20px;
+  margin: 8px 0;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  /* box-sizing: border-box; */
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 30px;
+  /* margin: 8px 0; */
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+.div1{
+    margin: auto;
+    /* width: 50%; */
+    border: 1px outset black;
+    padding: 30px;
+    /* height: 500px; */
+    width: 500px;
+}
+
+</style>
+</head>
+<body>
+    <div class="div1">
+    
+        <form style="text-align: center;" action="" onsubmit="return validation()" method="post">
+            <table align="center">
+                <h1>hgg</h1>
+                <tr>
+                   <th> <label for="">Username</label></th>
+                   <th><input type="text" name="user" class="form-control" id="user"></th>
+                </tr>
+                <br>
+                <tr>
+                   <th><label for="">Password</label></th>
+                   <th><input type="password" name="pass" class="form-control" id="pass"></th>
+                </tr>
+                <br>
+                <tr>
+                   <th><label for="">Confirm password</label></th>
+                    <th><input type="password" name="conpass" class="form-control" id="conpass"></th>
+                </tr>
+                <br>
+                <tr>
+                   <th><label for="">Mobile number</label></th>
+                   <th><input type="text" name="mobile" class="form-control" id="mobilenumber"></th>
+                </tr>
+                <br>
+                <tr>
+                   <th><label for="">Email</label></th>
+                   <th><input type="text" name="email" class="form-control" id="email"></th>
+                </tr>
+                <br>
+            </table>
+                <button type="submit" onclick="validation()">Register</button>
+        </form>
+
+    </div>
+    <script>
+        function validation(){
+            
+        }
+    </script>
+</body>
+</html>
